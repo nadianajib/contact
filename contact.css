@@ -1,0 +1,38 @@
+/* contact.css */
+body{
+    background-color: grey;
+}
+.container {
+    max-width: 400px; /* Ajustez la largeur maximale du conteneur selon vos préférences */
+    margin: 0 left; /* Pour centrer le contenu horizontalement */
+    padding: 20px; /* Ajustez la marge intérieure du conteneur selon vos préférences */
+  }
+  
+  .list {
+    display: flex; /* Utilisation de Flexbox pour afficher les éléments */
+    flex-direction: column; /* Aligner les éléments verticalement */
+  }
+  
+  .list .overflow-auto {
+    margin-bottom: 20px; /* Ajustez la marge entre chaque profil selon vos préférences */
+    padding: 10px; /* Ajustez le rembourrage des éléments selon vos préférences */
+    background-color: #f3f4f6; /* Couleur de fond pour les éléments */
+    border-radius: 8px; /* Bordures arrondies */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+    text-align: center; /* Centrer le contenu horizontalement */
+  }
+  
+  .list .overflow-auto img {
+    width: 80px; /* Ajustez la taille des images selon vos préférences */
+    height: 80px;
+    border-radius: 50%; /* Pour une forme de cercle */
+    margin-bottom: 10px; /* Ajustez la marge entre l'image et le nom selon vos préférences */
+  }
+  
+  .list .overflow-auto p {
+    font-size: 16px; /* Ajustez la taille de la police du nom selon vos préférences */
+    font-weight: bold; /* Police en gras */
+    color: #333; /* Couleur du texte */
+    
+  }
+  
