@@ -37,6 +37,12 @@ body{
   color: #333; /* Couleur du texte */
   
 }
+.profile-details-container {
+  border: 2px solid #ccc; /* Ajout d'une bordure */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px; /* Ajout de rembourrage */
+  margin-top: 20px; /* Espacement du haut */
+}
 
 .profile-details {
 display: flex;
@@ -87,6 +93,7 @@ border: none;
 padding: 8px;
 border-radius: 0 5px 5px 0;
 cursor: pointer;
+color: #007bff;
 }
 .search-wrapper.active .search-input {
 width: 20px; 
@@ -95,6 +102,7 @@ width: 20px;
 .search-wrapper.active .search-icon {
 background-color: #333; 
 color: #fff; 
+
 }
 
 
