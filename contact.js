@@ -74,3 +74,9 @@ cards.forEach(function(card) {
 
 // Ajout d'un écouteur d'événement sur la barre de recherche pour appeler la fonction searchCards() à chaque changement de contenu
 document.querySelector('.search-input').addEventListener('input', searchCards);
+
+
+function toggleForm() {
+  // Votre code ici pour afficher ou masquer le formulaire
+  console.log("Bouton Ajouter cliqué !");
+}
