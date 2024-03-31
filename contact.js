@@ -80,3 +80,13 @@ function toggleForm() {
   // Votre code ici pour afficher ou masquer le formulaire
   console.log("Bouton Ajouter cliqué !");
 }
+  //code de validation
+  document.getElementById("registrer").onsubmit=function(){
+ let télephoneinput= document.getElementById("télephone").value;
+ let télephoneRe =/\(\d{3}-\s\d{7}/;
+ let validationResult=phoneRe.test(télephoneinput);
+ if(validationResult===false){
+  return false;
+ }
+ return true;
+  }
