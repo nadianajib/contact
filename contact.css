@@ -1,38 +1,123 @@
 /* contact.css */
 body{
-    background-color: grey;
+  background-color: grey;
 }
 .container {
-    max-width: 400px; /* Ajustez la largeur maximale du conteneur selon vos préférences */
-    margin: 0 left; /* Pour centrer le contenu horizontalement */
-    padding: 20px; /* Ajustez la marge intérieure du conteneur selon vos préférences */
-  }
+  max-width: 400px; /* Ajustez la largeur maximale du conteneur selon vos préférences */
+  margin: 0 left; /* Pour centrer le contenu horizontalement */
+  padding: 20px; /* Ajustez la marge intérieure du conteneur selon vos préférences */
+}
+
+.list {
+  display: flex; /* Utilisation de Flexbox pour afficher les éléments */
+  flex-direction: column; /* Aligner les éléments verticalement */
+}
+
+.list .overflow-auto {
+  margin-bottom: 20px; /* Ajustez la marge entre chaque profil selon vos préférences */
+  padding: 10px; /* Ajustez le rembourrage des éléments selon vos préférences */
+  background-color: #f3f4f6; /* Couleur de fond pour les éléments */
+  border-radius: 8px; /* Bordures arrondies */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+  text-align: center; /* Centrer le contenu horizontalement */
+}
+
+.list .overflow-auto img {
+  width: 80px; /* Ajustez la taille des images selon vos préférences */
+  height: 80px;
+
+
+  border-radius: 50%; /* Pour une forme de cercle */
+  margin-bottom: 10px; /* Ajustez la marge entre l'image et le nom selon vos préférences */
+}
+
+.list .overflow-auto p {
+  font-size: 16px; /* Ajustez la taille de la police du nom selon vos préférences */
+  font-weight: bold; /* Police en gras */
+  color: #333; /* Couleur du texte */
   
-  .list {
-    display: flex; /* Utilisation de Flexbox pour afficher les éléments */
-    flex-direction: column; /* Aligner les éléments verticalement */
-  }
-  
-  .list .overflow-auto {
-    margin-bottom: 20px; /* Ajustez la marge entre chaque profil selon vos préférences */
-    padding: 10px; /* Ajustez le rembourrage des éléments selon vos préférences */
-    background-color: #f3f4f6; /* Couleur de fond pour les éléments */
-    border-radius: 8px; /* Bordures arrondies */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
-    text-align: center; /* Centrer le contenu horizontalement */
-  }
-  
-  .list .overflow-auto img {
-    width: 80px; /* Ajustez la taille des images selon vos préférences */
-    height: 80px;
-    border-radius: 50%; /* Pour une forme de cercle */
-    margin-bottom: 10px; /* Ajustez la marge entre l'image et le nom selon vos préférences */
-  }
-  
-  .list .overflow-auto p {
-    font-size: 16px; /* Ajustez la taille de la police du nom selon vos préférences */
-    font-weight: bold; /* Police en gras */
-    color: #333; /* Couleur du texte */
-    
-  }
-  
+}
+
+.profile-details {
+display: flex;
+flex-direction: column;
+align-items: center;
+right: 10%;
+position: fixed;
+border-radius: 80px solid ;
+
+}
+rofile-details img {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+.profile-details p {
+margin: 0;
+font-size: 20px;
+}
+.profile-details .phone-number i {
+margin-right: 5px; /* Espacement entre l'icône et le numéro de téléphone */
+}
+.profile-details p i {
+margin-right: 5px; /* Espacement entre l'icône et le texte */
+}
+/* la zone de recherche */
+
+.search-wrapper {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.search-input {
+width: 200px;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px 0 0 5px;
+outline: none;
+}
+
+.search-icon {
+background-color: #ccc;
+border: none;
+padding: 8px;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+}
+.search-wrapper.active .search-input {
+width: 250px; 
+}
+
+.search-wrapper.active .search-icon {
+background-color: #333; 
+color: #fff; 
+}
+
+
+@media screen and (max-width: 767px) {
+.container {
+  max-width: 100%; /* Ajustez la largeur maximale pour remplir l'écran */
+  padding: 10px; /* Réduisez l'espacement intérieur */
+}
+
+.list .overflow-auto img {
+  width: 60px; /* Réduisez la taille des images pour les écrans plus petits */
+  height: 60px;
+}
+
+.profile-details {
+  right: auto; /* Désactivez l'alignement à droite */
+  left: 0; /* Alignez-le à gauche */
+  width: 100%; /* Utilisez toute la largeur de l'écran */
+  padding: 10px; /* Réduisez l'espacement intérieur */
+  position: static; /* Changez la position à statique pour le positionnement par défaut */
+  border-radius: 0; /* Supprimez la bordure */
+}
+
+.profile-details img {
+  width: 60px; /* Réduisez la taille des images */
+  height: 60px;
+}
+}
